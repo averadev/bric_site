@@ -289,7 +289,6 @@ section h3.section-subheading {
   font-size: 18px;
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
-  font-style: italic;
   text-align: justify; 
   font-weight: 400;
   margin: 0 10% 75px 10%;
@@ -359,7 +358,6 @@ section h3.section-subheading {
 }
 #portfolio .portfolio-item .portfolio-caption p {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
   font-size: 16px;
   margin: 0;
 }
@@ -404,7 +402,7 @@ section h3.section-subheading {
   float: right;
   padding: 0 20px 0 100px;
   position: relative;
-  text-align: left;
+  text-align: justify;
 }
 .timeline > li .timeline-panel:before {
   border-left-width: 0;
@@ -479,7 +477,7 @@ section h3.section-subheading {
     width: 41%;
     float: left;
     padding: 0 20px 20px 30px;
-    text-align: right;
+    text-align: justify;
   }
   .timeline > li .timeline-image {
     width: 100px;
