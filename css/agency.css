@@ -292,9 +292,13 @@ section h3.section-subheading {
   text-align: justify; 
   font-weight: 400;
   margin: 0 10% 75px 10%;
+  line-height: 1.5em;
 }
 .bullets{
   text-align: left; 
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.75;
 }
 @media (min-width: 768px) {
   section {
@@ -436,7 +440,7 @@ section h3.section-subheading {
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
-  text-align: left;
+  text-align: justify;
   padding: 0 20px 0 100px;
 }
 .timeline > li.timeline-inverted > .timeline-panel:before {
@@ -486,13 +490,13 @@ section h3.section-subheading {
     margin-left: -50px;
   }
   .timeline > li .timeline-image h4 {
-    font-size: 13px;
+    font-size: 11px;
     margin-top: 16px;
     line-height: 18px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
-    text-align: left;
+    text-align: justify;
     padding: 0 30px 20px 20px;
   }
 }
