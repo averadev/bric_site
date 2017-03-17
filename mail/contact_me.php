@@ -22,5 +22,38 @@ $email_body = "Recibiste un nuevo mensaje del formulario de contacto del sitio w
 $headers = "From: noreply@briccancun.org\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
+
+
+// Email to Person
+$título = 'Gracias por su interés';
+// mensaje
+$mensaje = '
+<html>
+    <body>
+        <div style="width:100%; height:60px; background: #212121 url(http://briccancun.org/resources/favicon.png) no-repeat center left; font-size:30px; color:#ffffff; padding: 20px 0 0 80px; ">
+            Brigada de Rescate Internacional Canc&uacute;n, A.C.
+        </div>
+        <div style="width:100%; height:5px; background: #e80909;"></div>
+        <div style="width:100%; margin: 20px 0;">
+            <h2>Gracias por su inter&eacute;s</h2>
+            <p style="font-family:Georgia; font-size:16px;">Se ha enviado su consulta a la persona correspondiente y se pondr&acute;n en contacto con usted lo antes posible.</p>
+        </div>
+        <div style="width:100%; height:60px; background: #212121; font-size:18px; font-weight: bold; color:#ffffff;">
+            <div style="margin-left: 10px; display: inline-block; line-height: 60px;">CANCUN QUINTANA ROO MEXICO</div>
+        </div>
+    </body>
+</html>
+';
+// Para enviar un correo HTML, debe establecerse la cabecera Content-type
+$cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+$cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+$cabeceras .= 'From: noreply@briccancun.org';
+// Enviarlo
+//mail('conomia_alfredo@hotmail.com', $título, $mensaje, $cabeceras);
+mail($email_address, $título, $mensaje, $cabeceras);
+
+
+
+
 return true;         
 ?>

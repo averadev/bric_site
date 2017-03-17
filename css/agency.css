@@ -354,7 +354,7 @@ section h3.section-subheading {
   margin: 0 auto;
   background-color: white;
   text-align: center;
-  padding: 25px;
+  padding: 15px;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
@@ -362,7 +362,7 @@ section h3.section-subheading {
 }
 #portfolio .portfolio-item .portfolio-caption p {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
 }
 #portfolio * {
@@ -434,7 +434,7 @@ section h3.section-subheading {
   text-align: center;
 }
 .timeline > li .timeline-image h4 {
-  font-size: 10px;
+  font-size: 08px;
   margin-top: 12px;
   line-height: 14px;
 }
