@@ -294,11 +294,27 @@ section h3.section-subheading {
   margin: 0 10% 75px 10%;
   line-height: 1.5em;
 }
+h4.section-subheading {
+  font-size: 18px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  text-align: justify; 
+  font-weight: 400;
+  margin: 0 0 70px 0;
+  line-height: 1.5em;
+}
 .bullets{
   text-align: left; 
   color: #777777;
   font-size: 14px;
   line-height: 1.75;
+}
+.bulletsDonar{
+  text-align: left; 
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.75;
+  text-align: justify; 
 }
 @media (min-width: 768px) {
   section {
@@ -760,6 +776,16 @@ body {
 }
 .fa-admin{
     background: url(../img/icon-admin.png) center center no-repeat;
+}
+
+.fa-especie{
+    background: url(../img/icon-especie.png) center center no-repeat;
+}
+.fa-efectivo{
+    background: url(../img/icon-efectivo.png) center center no-repeat;
+}
+.fa-volun{
+    background: url(../img/icon-volun.png) center center no-repeat;
 }
 
 
