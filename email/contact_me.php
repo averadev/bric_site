@@ -19,7 +19,9 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 $to = 'administracion@briccancun.org'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Formulario de Contacto:  $name";
 $email_body = "Recibiste un nuevo mensaje del formulario de contacto del sitio web.\n\n"."Nombre: $name\n\nEmail: $email_address\n\nTelefono: $phone\n\nMensaje:\n$message";
-$headers = "From: noreply@briccancun.org\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/plain; charset=UTF-8' . "\r\n";
+$headers .= "From: noreply@briccancun.org" . "\r\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
 
@@ -30,17 +32,16 @@ $título = 'Gracias por su interés';
 $mensaje = '
 <html>
     <body>
-        <div style="width:100%; height:60px; background: #212121 url(http://briccancun.org/resources/favicon.png) no-repeat center left; font-size:30px; color:#ffffff; padding: 20px 0 0 80px; ">
+        <div style="width:100%; height:60px; background: #212121 url(http://briccancun.org/resources/favicon.png) no-repeat center left; font-size:20px; color:#ffffff; padding: 30px 0 0 80px; ">
             Brigada de Rescate Internacional Canc&uacute;n, A.C.
         </div>
         <div style="width:100%; height:5px; background: #e80909;"></div>
         <div style="width:100%; margin: 20px 0;">
-            <h2>Gracias por su inter&eacute;s</h2>
-            <p style="font-family:Georgia; font-size:16px;">Se ha enviado su consulta a la persona correspondiente y se pondr&acute;n en contacto con usted lo antes posible.</p>
+            <h2>Gracias por su inter&eacute;s.</h2>
+            <p style="font-family:Georgia; font-size:16px;">
+            Se ha enviado su consulta a la persona correspondiente; se pondr&aacute;n en contacto con usted lo antes posible.</p>
         </div>
-        <div style="width:100%; height:60px; background: #212121; font-size:18px; font-weight: bold; color:#ffffff;">
-            <div style="margin-left: 10px; display: inline-block; line-height: 60px;">CANCUN QUINTANA ROO MEXICO</div>
-        </div>
+        
     </body>
 </html>
 ';

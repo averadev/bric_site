@@ -663,6 +663,7 @@ ul.social-buttons li a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  margin-bottom: 5px;
 }
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
@@ -767,6 +768,12 @@ body {
   webkit-tap-highlight-color: #e01a0f;
 }
 
+.socialM{
+    position: absolute;
+    right: 0;
+    top: 75px;
+    text-align: center;
+}
 
 .fa-brec{
     background: url(../img/icon-brec.png) center center no-repeat;
